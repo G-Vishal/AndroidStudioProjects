@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <EditText
+        android:id="@+id/txt_phon_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/txt_phon_message"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Type your Message here"
+        android:textSize="22sp"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="send"
+    android:textSize="25sp"
+    android:layout_marginTop="10dp"
+    android:onClick="btn_send"
+    />
+</LinearLayout>
